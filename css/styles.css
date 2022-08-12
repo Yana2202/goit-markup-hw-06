@@ -723,6 +723,23 @@ button.current-1 {
   display: flex;
   flex-direction: column;
 }
+.modal-title {
+  /* width: 448px;
+  height: 23px;
+  left: 576px;
+  top: 261px; */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 12px;
+}
 .modal-form-input-wrapper {
   position: relative;
   display: block;
@@ -790,5 +807,68 @@ button.current-1 {
 .modal-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+  margin-bottom: 30px;
+}
+.modal-form-check-desc::before {
+  display: block;
+  content: " ";
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 1);
+
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: var(--accent-color);
+  background-image: url(/images/done.svg);
+  background-repeat: no-repeat;
+  background-position: 1px 2px;
+  background-size: 12px;
+}
+.modal-form-check:focus + .modal-form-check-desc::before {
+  border: 1px solid #2196f3;
+}
+.modal-form-submit {
+  min-width: 200px;
+  align-self: center;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border-radius: 4px;
+  border: var(--accent-color);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  background-color: #188ce8;
+  color: var(--primary-bg-color);
 }
 /* ========================/MODAL FORM================= */ ;
