@@ -657,6 +657,46 @@ button.current-1 {
 .social .social-list-link:focus {
   background-color: var(--accent-color);
 }
+
+.footer-form-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+  margin-left: 844px;
+  margin-top: -137px;
+}
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 844px;
+  padding: 16px 12px;
+  background-color: rgba(47, 48, 58, 1);
+}
+.footer-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.footer-form-icon {
+  position: absolute;
+  align-items: center;
+  margin-left: 10px;
+}
+.footer-form-input::placeholder {
+  font-size: 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
 /* ==========================/FOOTER===================== */
 /* =======================MODAL========================== */
 .backdrop {
@@ -724,11 +764,6 @@ button.current-1 {
   flex-direction: column;
 }
 .modal-title {
-  /* width: 448px;
-  height: 23px;
-  left: 576px;
-  top: 261px; */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -744,6 +779,7 @@ button.current-1 {
   position: relative;
   display: block;
 }
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
