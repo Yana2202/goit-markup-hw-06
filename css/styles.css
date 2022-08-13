@@ -668,8 +668,8 @@ button.current-1 {
   text-transform: uppercase;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
-  margin-left: 844px;
-  margin-top: -137px;
+  padding-top: 12px;
+  margin-left: 95px;
 }
 .footer-form-input {
   width: 358px;
@@ -680,13 +680,34 @@ button.current-1 {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 844px;
   padding: 16px 12px;
   background-color: rgba(47, 48, 58, 1);
+  margin-left: 93px;
 }
 .footer-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.footer-form-submit {
+  min-width: 200px;
+  height: 50px;
+  align-self: center;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border-radius: 4px;
+  border: var(--accent-color);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-icon {
   position: absolute;
@@ -764,15 +785,13 @@ button.current-1 {
   flex-direction: column;
 }
 .modal-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1, 15;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--tertiary-font);
   margin-bottom: 12px;
 }
 .modal-form-input-wrapper {
@@ -818,6 +837,11 @@ button.current-1 {
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
+}
+.modal-form-link {
+  color: #2196f3;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .modal-form-field {
   margin-bottom: 10px;
@@ -869,6 +893,7 @@ button.current-1 {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  margin-left: 12px;
 }
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
@@ -878,10 +903,11 @@ button.current-1 {
   background-size: 12px;
 }
 .modal-form-check:focus + .modal-form-check-desc::before {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 .modal-form-submit {
   min-width: 200px;
+  height: 57px;
   align-self: center;
   padding-left: 52px;
   padding-right: 52px;
